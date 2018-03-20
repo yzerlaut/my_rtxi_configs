@@ -1,0 +1,52 @@
+<RTXI class="settings" version="2.1">
+ <OBJECT id="0" component="rt">
+  <PARAM name="Period">1000000</PARAM>
+ </OBJECT>
+ <OBJECT id="1" component="io">
+  <PARAM name="Num Links">0</PARAM>
+ </OBJECT>
+ <OBJECT id="3" component="plugin" library="model_loader.so"/>
+ <OBJECT id="4" component="plugin" library="module_installer.so"/>
+ <OBJECT id="5" component="plugin" library="system_control.so"/>
+ <OBJECT id="6" component="plugin" library="oscilloscope.so">
+  <PARAM name="Num Panels">1</PARAM>
+  <OBJECT id="12" name="0">
+   <PARAM name="0 ID">2</PARAM>
+   <PARAM name="0 index">0</PARAM>
+   <PARAM name="0 offset">0</PARAM>
+   <PARAM name="0 pen color">#ff0010</PARAM>
+   <PARAM name="0 pen style">1</PARAM>
+   <PARAM name="0 pen width">1</PARAM>
+   <PARAM name="0 scale">0.025</PARAM>
+   <PARAM name="0 type">2</PARAM>
+   <PARAM name="DivT">5000</PARAM>
+   <PARAM name="DivX">10</PARAM>
+   <PARAM name="DivY">10</PARAM>
+   <PARAM name="H">516</PARAM>
+   <PARAM name="Num Channels">1</PARAM>
+   <PARAM name="Paused">0</PARAM>
+   <PARAM name="Refresh">250</PARAM>
+   <PARAM name="Size">50001</PARAM>
+   <PARAM name="W">719</PARAM>
+   <PARAM name="X">357</PARAM>
+   <PARAM name="Y">9</PARAM>
+  </OBJECT>
+ </OBJECT>
+ <OBJECT id="7" component="plugin" library="data_recorder.so">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT id="8" component="plugin" library="connector.so"/>
+ <OBJECT id="9" component="plugin" library="performance_measurement.so"/>
+ <OBJECT id="10" component="plugin" library="userprefs.so"/>
+ <OBJECT id="2" component="plugin" library="wave_maker.so">
+  <PARAM name="File Name">/home/yann/DATA/sample_Vm.dat</PARAM>
+  <PARAM name="Gain">1</PARAM>
+  <PARAM name="H">290</PARAM>
+  <PARAM name="Length (s)">107.995</PARAM>
+  <PARAM name="Loops">1000</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">22</PARAM>
+  <PARAM name="Y">14</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+</RTXI>

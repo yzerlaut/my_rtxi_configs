@@ -1,8 +1,8 @@
-<RTXI version="2.0" class="settings">
- <OBJECT component="rt" id="0">
+<RTXI class="settings" version="2.1">
+ <OBJECT id="0" component="rt">
   <PARAM name="Period">100000</PARAM>
  </OBJECT>
- <OBJECT component="io" id="1">
+ <OBJECT id="1" component="io">
   <PARAM name="0 Destination ID">11</PARAM>
   <PARAM name="0 Destination channel">0</PARAM>
   <PARAM name="0 Source ID">13</PARAM>
@@ -13,13 +13,9 @@
   <PARAM name="1 Source channel">0</PARAM>
   <PARAM name="Num Links">2</PARAM>
  </OBJECT>
- <OBJECT component="plugin" id="2" library="analogy_driver.so">
-  <PARAM name="Num Devices">0</PARAM>
- </OBJECT>
- <OBJECT component="plugin" id="3" library="model_loader.so"/>
- <OBJECT component="plugin" id="4" library="dynamo_model_loader.so"/>
- <OBJECT component="plugin" id="5" library="system_control.so"/>
- <OBJECT component="plugin" id="6" library="oscilloscope.so">
+ <OBJECT library="model_loader.so" id="3" component="plugin"/>
+ <OBJECT library="system_control.so" id="5" component="plugin"/>
+ <OBJECT library="oscilloscope.so" id="6" component="plugin">
   <PARAM name="Num Panels">1</PARAM>
   <OBJECT id="12" name="0">
    <PARAM name="0 ID">11</PARAM>
@@ -30,44 +26,50 @@
    <PARAM name="0 pen width">1</PARAM>
    <PARAM name="0 scale">0.02</PARAM>
    <PARAM name="0 type">2</PARAM>
-   <PARAM name="DivT">200</PARAM>
+   <PARAM name="1 ID">13</PARAM>
+   <PARAM name="1 index">1</PARAM>
+   <PARAM name="1 offset">0.0003</PARAM>
+   <PARAM name="1 pen color">#0075dc</PARAM>
+   <PARAM name="1 pen style">1</PARAM>
+   <PARAM name="1 pen width">1</PARAM>
+   <PARAM name="1 scale">0.0001</PARAM>
+   <PARAM name="1 type">2</PARAM>
+   <PARAM name="DivT">500</PARAM>
    <PARAM name="DivX">10</PARAM>
    <PARAM name="DivY">10</PARAM>
-   <PARAM name="H">597</PARAM>
-   <PARAM name="Num Channels">1</PARAM>
+   <PARAM name="H">460</PARAM>
+   <PARAM name="Num Channels">2</PARAM>
    <PARAM name="Paused">1</PARAM>
    <PARAM name="Refresh">250</PARAM>
-   <PARAM name="Size">20001</PARAM>
-   <PARAM name="W">840</PARAM>
-   <PARAM name="X">764</PARAM>
-   <PARAM name="Y">102</PARAM>
+   <PARAM name="Size">50002</PARAM>
+   <PARAM name="W">753</PARAM>
+   <PARAM name="X">375</PARAM>
+   <PARAM name="Y">3</PARAM>
   </OBJECT>
  </OBJECT>
- <OBJECT component="plugin" id="7" library="data_recorder.so">
+ <OBJECT library="data_recorder.so" id="7" component="plugin">
   <PARAM name="Num Panels">1</PARAM>
-  <OBJECT id="14" name="0">
+  <OBJECT id="2" name="0">
    <PARAM name="0 ID">11</PARAM>
    <PARAM name="0 index">0</PARAM>
    <PARAM name="0 type">2</PARAM>
    <PARAM name="1 ID">13</PARAM>
-   <PARAM name="1 index">0</PARAM>
+   <PARAM name="1 index">1</PARAM>
    <PARAM name="1 type">2</PARAM>
    <PARAM name="Downsample">1</PARAM>
-   <PARAM name="H">452</PARAM>
    <PARAM name="Num Channels">2</PARAM>
-   <PARAM name="W">492</PARAM>
-   <PARAM name="X">338</PARAM>
-   <PARAM name="Y">22</PARAM>
+   <PARAM name="X">36</PARAM>
+   <PARAM name="Y">57</PARAM>
   </OBJECT>
  </OBJECT>
- <OBJECT component="plugin" id="8" library="connector.so"/>
- <OBJECT component="plugin" id="9" library="performance_measurement.so"/>
- <OBJECT component="plugin" id="10" library="userprefs.so"/>
- <OBJECT component="plugin" id="11" library="lif_model.so">
+ <OBJECT library="connector.so" id="8" component="plugin"/>
+ <OBJECT library="performance_measurement.so" id="9" component="plugin"/>
+ <OBJECT library="userprefs.so" id="10" component="plugin"/>
+ <OBJECT library="lif_model.so" id="11" component="plugin">
   <PARAM name="Cm (pF)">200</PARAM>
   <PARAM name="El (mV)">-70</PARAM>
   <PARAM name="Gl (nS)">10</PARAM>
-  <PARAM name="H">398</PARAM>
+  <PARAM name="H">393</PARAM>
   <PARAM name="Ipulse (pA)">0</PARAM>
   <PARAM name="Rate (Hz)">20000</PARAM>
   <PARAM name="Time (s)">0</PARAM>
@@ -75,17 +77,19 @@
   <PARAM name="Tr (ms)">5</PARAM>
   <PARAM name="Vp (mV)">10</PARAM>
   <PARAM name="Vt (mV)">-50</PARAM>
-  <PARAM name="W">292</PARAM>
-  <PARAM name="X">0</PARAM>
-  <PARAM name="Y">0</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">13</PARAM>
+  <PARAM name="Y">7</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
- <OBJECT component="plugin" id="13" library="in_vivo_like_cortical_act.so">
-  <PARAM name="Cort. State">0</PARAM>
-  <PARAM name="H">317</PARAM>
-  <PARAM name="W">554</PARAM>
-  <PARAM name="X">52</PARAM>
-  <PARAM name="Y">376</PARAM>
+ <OBJECT library="in_vivo_like_cortical_act.so" id="13" component="plugin">
+  <PARAM name="Fa (Hz)">20</PARAM>
+  <PARAM name="Fe (Hz)">7.68514</PARAM>
+  <PARAM name="Fi (Hz)">19.3304</PARAM>
+  <PARAM name="H">261</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">809</PARAM>
+  <PARAM name="Y">330</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
 </RTXI>

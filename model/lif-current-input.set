@@ -1,15 +1,15 @@
-<RTXI version="2.0" class="settings">
+<RTXI class="settings" version="2.1">
  <OBJECT component="rt" id="0">
   <PARAM name="Period">1000000</PARAM>
  </OBJECT>
  <OBJECT component="io" id="1">
-  <PARAM name="Num Links">0</PARAM>
- </OBJECT>
- <OBJECT component="plugin" id="2" library="analogy_driver.so">
-  <PARAM name="Num Devices">0</PARAM>
+  <PARAM name="0 Destination ID">2</PARAM>
+  <PARAM name="0 Destination channel">0</PARAM>
+  <PARAM name="0 Source ID">11</PARAM>
+  <PARAM name="0 Source channel">0</PARAM>
+  <PARAM name="Num Links">1</PARAM>
  </OBJECT>
  <OBJECT component="plugin" id="3" library="model_loader.so"/>
- <OBJECT component="plugin" id="4" library="dynamo_model_loader.so"/>
  <OBJECT component="plugin" id="5" library="system_control.so"/>
  <OBJECT component="plugin" id="6" library="oscilloscope.so">
   <PARAM name="Num Panels">1</PARAM>
@@ -22,17 +22,25 @@
    <PARAM name="0 pen width">1</PARAM>
    <PARAM name="0 scale">0.01</PARAM>
    <PARAM name="0 type">2</PARAM>
+   <PARAM name="1 ID">2</PARAM>
+   <PARAM name="1 index">0</PARAM>
+   <PARAM name="1 offset">0</PARAM>
+   <PARAM name="1 pen color">#535154</PARAM>
+   <PARAM name="1 pen style">1</PARAM>
+   <PARAM name="1 pen width">1</PARAM>
+   <PARAM name="1 scale">1</PARAM>
+   <PARAM name="1 type">2</PARAM>
    <PARAM name="DivT">200</PARAM>
    <PARAM name="DivX">10</PARAM>
    <PARAM name="DivY">10</PARAM>
-   <PARAM name="H">597</PARAM>
-   <PARAM name="Num Channels">1</PARAM>
+   <PARAM name="H">422</PARAM>
+   <PARAM name="Num Channels">2</PARAM>
    <PARAM name="Paused">1</PARAM>
    <PARAM name="Refresh">250</PARAM>
    <PARAM name="Size">2001</PARAM>
-   <PARAM name="W">840</PARAM>
-   <PARAM name="X">540</PARAM>
-   <PARAM name="Y">90</PARAM>
+   <PARAM name="W">643</PARAM>
+   <PARAM name="X">497</PARAM>
+   <PARAM name="Y">2</PARAM>
   </OBJECT>
  </OBJECT>
  <OBJECT component="plugin" id="7" library="data_recorder.so">
@@ -45,7 +53,7 @@
   <PARAM name="Cm (pF)">200</PARAM>
   <PARAM name="El (mV)">-70</PARAM>
   <PARAM name="Gl (nS)">10</PARAM>
-  <PARAM name="H">398</PARAM>
+  <PARAM name="H">393</PARAM>
   <PARAM name="Ipulse (pA)">210</PARAM>
   <PARAM name="Rate (Hz)">20000</PARAM>
   <PARAM name="Time (s)">0</PARAM>
@@ -53,9 +61,18 @@
   <PARAM name="Tr (ms)">5</PARAM>
   <PARAM name="Vp (mV)">10</PARAM>
   <PARAM name="Vt (mV)">-50</PARAM>
-  <PARAM name="W">292</PARAM>
-  <PARAM name="X">78</PARAM>
-  <PARAM name="Y">80</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">25</PARAM>
+  <PARAM name="Y">17</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" id="2" library="spike_detector.so">
+  <PARAM name="H">161</PARAM>
+  <PARAM name="Min Interval (ms)">5</PARAM>
+  <PARAM name="Threshold (mV)">-20</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">101</PARAM>
+  <PARAM name="Y">413</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
 </RTXI>
