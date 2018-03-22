@@ -1,0 +1,74 @@
+<RTXI class="settings" version="2.1">
+ <OBJECT id="0" component="rt">
+  <PARAM name="Period">100000</PARAM>
+ </OBJECT>
+ <OBJECT id="1" component="io">
+  <PARAM name="0 Destination ID">11</PARAM>
+  <PARAM name="0 Destination channel">0</PARAM>
+  <PARAM name="0 Source ID">2</PARAM>
+  <PARAM name="0 Source channel">0</PARAM>
+  <PARAM name="Num Links">1</PARAM>
+ </OBJECT>
+ <OBJECT library="model_loader.so" id="3" component="plugin"/>
+ <OBJECT library="module_installer.so" id="4" component="plugin"/>
+ <OBJECT library="system_control.so" id="5" component="plugin"/>
+ <OBJECT library="oscilloscope.so" id="6" component="plugin">
+  <PARAM name="Num Panels">1</PARAM>
+  <OBJECT name="0" id="12">
+   <PARAM name="0 ID">2</PARAM>
+   <PARAM name="0 index">0</PARAM>
+   <PARAM name="0 offset">-0.0005</PARAM>
+   <PARAM name="0 pen color">#ff0010</PARAM>
+   <PARAM name="0 pen style">1</PARAM>
+   <PARAM name="0 pen width">1</PARAM>
+   <PARAM name="0 scale">0.00025</PARAM>
+   <PARAM name="0 type">2</PARAM>
+   <PARAM name="1 ID">11</PARAM>
+   <PARAM name="1 index">0</PARAM>
+   <PARAM name="1 offset">0</PARAM>
+   <PARAM name="1 pen color">#0075dc</PARAM>
+   <PARAM name="1 pen style">1</PARAM>
+   <PARAM name="1 pen width">1</PARAM>
+   <PARAM name="1 scale">1e-05</PARAM>
+   <PARAM name="1 type">2</PARAM>
+   <PARAM name="DivT">1000</PARAM>
+   <PARAM name="DivX">10</PARAM>
+   <PARAM name="DivY">10</PARAM>
+   <PARAM name="H">507</PARAM>
+   <PARAM name="Num Channels">2</PARAM>
+   <PARAM name="Paused">1</PARAM>
+   <PARAM name="Refresh">250</PARAM>
+   <PARAM name="Size">100002</PARAM>
+   <PARAM name="W">817</PARAM>
+   <PARAM name="X">402</PARAM>
+   <PARAM name="Y">39</PARAM>
+  </OBJECT>
+ </OBJECT>
+ <OBJECT library="data_recorder.so" id="7" component="plugin">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT library="connector.so" id="8" component="plugin"/>
+ <OBJECT library="performance_measurement.so" id="9" component="plugin"/>
+ <OBJECT library="userprefs.so" id="10" component="plugin"/>
+ <OBJECT library="wave_maker.so" id="2" component="plugin">
+  <PARAM name="File Name">/home/yann/DATA/Awake_LFP_sample.dat</PARAM>
+  <PARAM name="Gain">1</PARAM>
+  <PARAM name="H">290</PARAM>
+  <PARAM name="Length (s)">80.0001</PARAM>
+  <PARAM name="Loops">1</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">25</PARAM>
+  <PARAM name="Y">45</PARAM>
+  <PARAM name="paused">1</PARAM>
+ </OBJECT>
+ <OBJECT library="gamma_power_tracking.so" id="11" component="plugin">
+  <PARAM name="A State">0</PARAM>
+  <PARAM name="H">190</PARAM>
+  <PARAM name="Smoothing (ms)">10</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="Wavelet freq. (Hz)">100</PARAM>
+  <PARAM name="X">42</PARAM>
+  <PARAM name="Y">434</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+</RTXI>
