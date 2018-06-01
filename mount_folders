@@ -1,0 +1,2 @@
+sudo mount -t vboxsf my_rtxi /home/yann/my_rtxi
+sudo mount -t vboxsf DATA /home/yann/DATA
