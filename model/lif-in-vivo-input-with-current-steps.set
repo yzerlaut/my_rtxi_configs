@@ -9,7 +9,7 @@
   <PARAM name="0 Source channel">0</PARAM>
   <PARAM name="1 Destination ID">11</PARAM>
   <PARAM name="1 Destination channel">0</PARAM>
-  <PARAM name="1 Source ID">14</PARAM>
+  <PARAM name="1 Source ID">4</PARAM>
   <PARAM name="1 Source channel">0</PARAM>
   <PARAM name="2 Destination ID">13</PARAM>
   <PARAM name="2 Destination channel">0</PARAM>
@@ -17,9 +17,9 @@
   <PARAM name="2 Source channel">0</PARAM>
   <PARAM name="Num Links">3</PARAM>
  </OBJECT>
- <OBJECT component="plugin" id="3" library="model_loader.so"/>
- <OBJECT component="plugin" id="5" library="system_control.so"/>
- <OBJECT component="plugin" id="6" library="oscilloscope.so">
+ <OBJECT library="model_loader.so" component="plugin" id="3"/>
+ <OBJECT library="system_control.so" component="plugin" id="5"/>
+ <OBJECT library="oscilloscope.so" component="plugin" id="6">
   <PARAM name="Num Panels">1</PARAM>
   <OBJECT id="12" name="0">
    <PARAM name="0 ID">11</PARAM>
@@ -38,7 +38,7 @@
    <PARAM name="1 pen width">1</PARAM>
    <PARAM name="1 scale">0.0001</PARAM>
    <PARAM name="1 type">2</PARAM>
-   <PARAM name="2 ID">14</PARAM>
+   <PARAM name="2 ID">4</PARAM>
    <PARAM name="2 index">0</PARAM>
    <PARAM name="2 offset">0</PARAM>
    <PARAM name="2 pen color">#b266ff</PARAM>
@@ -49,17 +49,17 @@
    <PARAM name="DivT">500</PARAM>
    <PARAM name="DivX">10</PARAM>
    <PARAM name="DivY">10</PARAM>
-   <PARAM name="H">422</PARAM>
+   <PARAM name="H">432</PARAM>
    <PARAM name="Num Channels">3</PARAM>
    <PARAM name="Paused">1</PARAM>
    <PARAM name="Refresh">250</PARAM>
    <PARAM name="Size">50002</PARAM>
-   <PARAM name="W">713</PARAM>
-   <PARAM name="X">508</PARAM>
-   <PARAM name="Y">22</PARAM>
+   <PARAM name="W">745</PARAM>
+   <PARAM name="X">375</PARAM>
+   <PARAM name="Y">3</PARAM>
   </OBJECT>
  </OBJECT>
- <OBJECT component="plugin" id="7" library="data_recorder.so">
+ <OBJECT library="data_recorder.so" component="plugin" id="7">
   <PARAM name="Num Panels">1</PARAM>
   <OBJECT id="2" name="0">
    <PARAM name="0 ID">11</PARAM>
@@ -70,18 +70,18 @@
    <PARAM name="1 type">2</PARAM>
    <PARAM name="Downsample">1</PARAM>
    <PARAM name="Num Channels">2</PARAM>
-   <PARAM name="X">69</PARAM>
-   <PARAM name="Y">85</PARAM>
+   <PARAM name="X">36</PARAM>
+   <PARAM name="Y">57</PARAM>
   </OBJECT>
  </OBJECT>
- <OBJECT component="plugin" id="8" library="connector.so"/>
- <OBJECT component="plugin" id="9" library="performance_measurement.so"/>
- <OBJECT component="plugin" id="10" library="userprefs.so"/>
- <OBJECT component="plugin" id="11" library="lif_model.so">
+ <OBJECT library="connector.so" component="plugin" id="8"/>
+ <OBJECT library="performance_measurement.so" component="plugin" id="9"/>
+ <OBJECT library="userprefs.so" component="plugin" id="10"/>
+ <OBJECT library="lif_model.so" component="plugin" id="11">
   <PARAM name="Cm (pF)">200</PARAM>
   <PARAM name="El (mV)">-70</PARAM>
   <PARAM name="Gl (nS)">10</PARAM>
-  <PARAM name="H">393</PARAM>
+  <PARAM name="H">381</PARAM>
   <PARAM name="Ipulse (pA)">0</PARAM>
   <PARAM name="Rate (Hz)">20000</PARAM>
   <PARAM name="Time (s)">0</PARAM>
@@ -94,27 +94,27 @@
   <PARAM name="Y">7</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
- <OBJECT component="plugin" id="13" library="in_vivo_like_cortical_act.so">
+ <OBJECT library="in_vivo_like_cortical_act.so" component="plugin" id="13">
   <PARAM name="Fa (Hz)">0</PARAM>
   <PARAM name="Fe (Hz)">0.01</PARAM>
   <PARAM name="Fi (Hz)">0</PARAM>
-  <PARAM name="H">261</PARAM>
+  <PARAM name="H">254</PARAM>
   <PARAM name="W">294</PARAM>
   <PARAM name="X">809</PARAM>
   <PARAM name="Y">330</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
- <OBJECT component="plugin" id="14" library="continuous_current_steps.so">
-  <PARAM name="Delay (ms)">500</PARAM>
+ <OBJECT library="continuous_current_steps.so" component="plugin" id="4">
+  <PARAM name="Delay (ms)">100</PARAM>
   <PARAM name="Duration (ms)">200</PARAM>
-  <PARAM name="H">277</PARAM>
-  <PARAM name="Increments">1</PARAM>
+  <PARAM name="H">269</PARAM>
+  <PARAM name="Increments">10</PARAM>
   <PARAM name="Max Amp (pA)">200</PARAM>
   <PARAM name="Min Amp (pA)">-50</PARAM>
-  <PARAM name="Random Delay (ms)">100</PARAM>
+  <PARAM name="Random Delay (ms)">600</PARAM>
   <PARAM name="W">294</PARAM>
-  <PARAM name="X">32</PARAM>
-  <PARAM name="Y">349</PARAM>
+  <PARAM name="X">-3</PARAM>
+  <PARAM name="Y">368</PARAM>
   <PARAM name="paused">0</PARAM>
  </OBJECT>
 </RTXI>

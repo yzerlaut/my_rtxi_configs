@@ -1,2 +1,3 @@
+# sudo apt-get install virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 
 sudo mount -t vboxsf my_rtxi /home/yann/my_rtxi
 sudo mount -t vboxsf DATA /home/yann/DATA
