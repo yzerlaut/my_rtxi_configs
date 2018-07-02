@@ -1,3 +1,7 @@
+cd ~ # go to home folder
+# configure git
+git config --global user.email "yann.zerlaut@gmail.com"
+git config --global user.name "Yann Zerlaut"
 # generate ssh 
 ssh-keygen -t rsa -b 4096 -C "yann.zerlaut@gmail.com"
 eval "$(ssh-agent -s)"
@@ -10,4 +14,6 @@ sudo apt update
 sudo apt install emacs25
 # install rtxi
 git clone git@github.com:yzerlaut/rtxi.git
+# install virtual machine requirements
+sudo apt-get install virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11 
 
